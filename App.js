@@ -29,7 +29,7 @@ export default function App() {
   const scrollY = React.useRef(new Animated.Value(0)).current
   return (
     <View style={{ flex: 1 }}>
-      <StatusBar hidden />
+      <StatusBar hidden translucent backgroundColor='transparent' />
       <View style={{
         height: IMAGE_HEIGHT,
         overflow: 'hidden'
