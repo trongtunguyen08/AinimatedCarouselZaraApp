@@ -1,6 +1,5 @@
-import { StatusBar } from 'expo-status-bar'
 import React from 'react'
-import { Text, View, useWindowDimensions, Image, Animated } from 'react-native'
+import { Text, View, useWindowDimensions, Image, Animated, StatusBar } from 'react-native'
 import BottomSheet, { BottomSheetScrollView } from '@gorhom/bottom-sheet';
 
 const DATA = {
@@ -29,7 +28,7 @@ export default function App() {
   const scrollY = React.useRef(new Animated.Value(0)).current
   return (
     <View style={{ flex: 1 }}>
-      <StatusBar hidden translucent backgroundColor='transparent' />
+      <StatusBar barStyle='auto' translucent backgroundColor='transparent' />
       <View style={{
         height: IMAGE_HEIGHT,
         overflow: 'hidden'
